@@ -91,21 +91,17 @@ text-decoration:none;
 
 /*---------------------------------------FOOTER ---------------------------------------*/
 
-
 footer{
-    height: 180px;
+    padding: 0.5rem 0;
     background-color: #1F1F1F;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 25%);
 }
 
 .class-redes img{
     max-width: 35px;
-    width: 10%;
     height: 100%;
-    object-fit: cover;
 }
 
 .class-acerca a{
@@ -114,29 +110,15 @@ footer{
     text-decoration: none;
 }
 
-.class-acerca{
-    margin-top: 10px;
-}
-
 .class-contactanos a{
     color: #D9D9D9;
     list-style: none;
     text-decoration: none;
 }
 
-.class-contactanos{
-    margin-top: 10px;
-}
-
 .class-logo img{
      width: 20%;
-     height: 100%;
-     object-fit: cover;
  }
-
-.class-logo{
-    margin-top: 5px;
-}
 
 .class-redes{
     margin: 5px 0;
@@ -150,9 +132,8 @@ footer{
         align-items: center;
     }
 
-    .class-logo img{
-        width: 30%;
-        height: 100%;
+    .class-logo img {
+        width: 23%;
         object-fit: cover;
     }
 
