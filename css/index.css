@@ -74,6 +74,11 @@ main {
     margin-top: 2%;
 }
 
+.img-categorias img {
+    border: 4px solid transparent;
+
+}
+
 .img-categorias img:hover {
     transform: scale(1.1);
     transition-duration: 100ms;
