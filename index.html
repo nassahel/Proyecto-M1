@@ -1,217 +1,328 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title>Streamix</title>
-    <!---------------------------------------LINK DE BOOSTRAP--------------------------------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!---------------------------------------LINK DE MI CSS--------------------------------------->
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <title>Streamix | Las mejores películas</title>
+  <!---------------------------------------LINK DE BOOSTRAP--------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!---------------------------------------LINK DE MI CSS--------------------------------------->
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <!-- ============================NAVBAR1-REGISTRO======================================= -->
 
-    <ul class="nav justify-content-end navbar-1">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Ingresar</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Registrarse</a>
-        </li>
-    </ul>
-
-    <!--=====================================NAVBAR2-LOGO-Y-BUSQUEDA===============================-->
-
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-2">
-        <div class="container-fluid">
-            <img src="img/logo.png" alt="" width="60" class="d-inline-block align-text-top">
-            <a class="navbar-brand" href="index.html">STREAMIX</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mi Lista</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Peliculas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Series</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Peliculas" aria-label="Buscar">
-                    <button class="btn" type="submit">Buscar</button>
-                </form>
+  <!-- ============================MODAL======================================= -->
+  <div id="miModal" class="modal fade modal-md" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ingresar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="container d-flex justify-content-center flex-column align-items-center">
+                <div class="mb-3 col-11 centered">
+                    <label for="exampleFormControlInput1" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3 col-11 centered">
+                    <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a href="html/error.html"><button type="button"  class="btn btn-primary">Ingresar</button></a>
             </div>
         </div>
-    </nav>
+    </div>
+</div>
 
-    <!-- ============================MAIN======================================= -->
-    <main>
 
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active img-carrusel">
-            <div class="d-flex justify-content-center">
-              <img src="https://motcreative.com/wp-content/uploads/2022/02/VIKINGS_VALHALLA_NETFLIX_POSTER_MOT_CREATIVE_2.jpg" class="d-block w-100" alt="poster vikings">
-            </div>
-          </div>
-          <div class="carousel-item img-carrusel">
-            <div class="d-flex justify-content-center">
-              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71mXmB41psS._AC_UF894,1000_QL80_.jpg" class="d-block w-100" alt="poster peaky">
-            </div>
-          </div>
-          <div class="carousel-item img-carrusel">
-            <div class="d-flex justify-content-center">
-              <img src="https://m.media-amazon.com/images/I/71+mb2IuvgL._RI_.jpg" class="d-block w-100" alt="poster outlander">
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+ <!--=====================================NAVBAR===============================-->
+
+ <nav class="navbar navbar-expand-lg navbar-dark navbar-2 sticky-top">
+  <div class="container-fluid">
+      <a href="index.html"><img src="img/logo.png" alt="" width="90" class="d-inline-block align-text-top"></a>
+      <a class="navbar-brand " href="index.html">STREAMIX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/categoriaComedia.html">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="html/todas-series.html">Series</a>
+              </li>
+          </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar Peliculas" aria-label="Buscar">
+                  <a href="html/error.html"><button class="btn" type="button">Buscar</button></a>
+              </form>
+              
+              <ul class="navbar-nav me-auto mx-lg-4 mb-2 mb-lg-0 registro">
+                  <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#miModal" href="#">Ingresar</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="html/suscripcion.html">Registrarse</a>
+                  </li>
+              </ul>
+          </ul>
       </div>
 
-          <!-- ============================CATEGORIAS======================================= -->
-        <div class="categorias">
-           <div class="container text-left">
-             <a href="/html/categoriaComedia.html"><h2 class="text-success titulo-categoria ">Comedia</h2></a>
-             <div class="row">
-               <div class="col img-categorias">
-                 <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfKib_lFlymlT0GIcWyHMeuKhrb1WoUzeUGvgfQv-_Kq8RatMelCp8L78H32rYxULWzj-SnD3Ku3ExHMtmFkR8HIWZXHgTCK5TU.webp?r=d60" class="img-fluid rounded" alt="poster donde estan las rubias">
-               </div>
-
-              <div class="col img-categorias ">
-                <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWfuMo9mw0Mv7UMQJJSPTuBbYfMwEolw_cptFr4xyJ0rACRitEGr7o1GVai0T94HSPwmIGmTke6KWq0GarvE1TnedpG33P2bAW4.webp?r=024" class="img-fluid rounded" alt="poster vamos a la carcel">
-              </div>
+  </div>
+</nav>
 
 
-              <div class="col img-categorias ">
-                <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQXBcbFF6jcjkE7SbNuX2uZzSP-qyQN9-WlV4DierFiSMMq5qtxKM0hQ-QSJNLL1D1G_xAchGhnQ8iSRH9XEMTbnEcZCv5_VSFo.webp?r=743" class="img-fluid rounded" alt="poster buenos vecinos 2">
-              </div>
+   <!-- ============================MAIN======================================= -->
+   <main class="container principal">
 
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="html/life-as-we-know-it.html">
+            <img
+              src="https://i.ytimg.com/vi/g0Wnh_dTAU0/maxresdefault.jpg"
+              class="d-block w-100" alt="poster bajo el mismo techo">
+            </a>
+        </div>
+        <div class="carousel-item ">
+          <a href="#">  
+            <img
+              src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/58D59C200A3CBC2F4579029D6FD826B2B35161850E6816CB0DE5D23B4128C60F/scale?width=1200&aspectRatio=1.78&format=jpeg"
+              class="d-block w-100" alt="poster buenos vecinos 2">
+            </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#">
+            <img
+              src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D9E97EC1B0FFD7254B3A7B870AD1B979AA016B7558B1E550BF49C5235486C7BD/scale?width=1200&aspectRatio=1.78&format=jpeg"
+              class="d-block w-100" alt="poster duro de matar">
+            </a>
+        </div>
+        
+        <div class="carousel-item">
+          <a href="#">
+            <img
+              src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A863D3455F8901C38D59AC184FE38C8ED85140D890A077E48DA0EBD464940FB6/scale?width=1200&aspectRatio=1.78&format=jpeg"
+              class="d-block w-100" alt="poster logan">
+            </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-              <div class="col img-categorias ">
-                <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTnACpS38WmUTVSVHd00il7Z51Jbec8wmjrT9I3iXqD6nGFxleMGFHNHTqXkZVMCPabBn4xEXqtsoYcBdzWiOXoA5lcnYk4VBz1T3VpBILT3DcbnFPX5zrlzICdziPiIrMYQ.jpg?r=438" class="img-fluid rounded" alt="poster la otra missy">
-              </div>
-
-            </div>
-          </div>
-          <!-- ============================accion======================================= -->
-          <div class="container text-left">
-            <a href="/html/categoriaAccion.html"><h2 class="text-success titulo-categoria ">Accion</h2></a>
+    <!-- ============================CATEGORIAS======================================= -->
+    <div class="categorias mt-4">
+      <div class="container text-left">
+        <a href="html/categoriaComedia.html">
+          <h2 class="text-success titulo-categoria fw-bold mb-2">+ Comedia</h2>
+        </a>
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+          <div class="col img-categorias mb-3">
+            <a href="html/donde-estan-las-rubias.html"><img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfKib_lFlymlT0GIcWyHMeuKhrb1WoUzeUGvgfQv-_Kq8RatMelCp8L78H32rYxULWzj-SnD3Ku3ExHMtmFkR8HIWZXHgTCK5TU.webp?r=d60"
+              class="img-fluid rounded" alt="poster donde estan las rubias"></a>
             
-            <div class="row">
-              <div class="col img-categorias ">
-                <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW-VNalmBX16n30sM_AOfmKk7FZwFWbk_veCpUNKH5EOr3202DZkU6DYfv0_O6kpYtzNstlPUzlAiB2DhKPJ4rJIzoStmGk936I.webp?r=979" class="img-fluid rounded" alt="bloodshot poster">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZ9iS3-B68yWwvBbxPVepiGWUIZKyYiofcmovlwgO3T1Mu2RT8YbUpTwVAt1ZZ92gFmXfEMqMtRtTAu1SYEWP-2tPgc32lAQkK8.webp?r=b21" class="img-fluid rounded" alt="Venganza poster">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABav1PKXhPSgUezD4vvsL_ZmGQfBoak-AMZzwpw_9C4o1fsRtR1ldbnRiIU-QgZWGTq5a3lunBFdP8l-_RSra4bWEwcDG9zCZ7CU.webp?r=967" class="img-fluid rounded" alt="Los Condenados poster">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWQtbdqZFV5PIXt6kS8kjUs0f-zj2jXd1rmtoqv1Vv0TfrSrE9hEOZW5hNSszib9fkF6jwRv7E5nWDz0K4-Ff3demnho-6Ghgpk.webp?r=ba0" class="img-fluid rounded" alt="Francotirador 6 poster">
-              </div>
-            </div>
-            </div>
+          </div>
+
+          <div class="col img-categorias mb-3 ">
+            <a href="html/vamos-a-la-carcel.html">
+              <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWfuMo9mw0Mv7UMQJJSPTuBbYfMwEolw_cptFr4xyJ0rACRitEGr7o1GVai0T94HSPwmIGmTke6KWq0GarvE1TnedpG33P2bAW4.webp?r=024"
+              class="img-fluid rounded" alt="poster vamos a la carcel">
+            </a>
+            
           </div>
 
 
-          <!-- ============================TERROR======================================= -->
-          <div class="container text-left">
-            <h2 class="text-success titulo-categoria ">Terror</h2>
-            <div class="row">
-              <div class="col img-categorias ">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GYKa7VgOEd7TCwgEAAAAD/tileburnedin?size=1280x720&partner=hbomaxcom&v=55a7badea83fa0c88498bc760c4e4d73&host=art-gallery.api.hbo.com&language=en-us&w=1280" class="img-fluid rounded" alt="The Rite poster">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GYbzJbQqVUbepjgEAAAAi/tileburnedin?size=1280x720&partner=hbomaxcom&v=e62b00ab510db3d35a753002fe46b6b1&host=art-gallery.api.hbo.com&language=es-419&w=1280" class="img-fluid rounded" alt="El exorcismo de Emily rose poster ">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GYSU-3gGn1YO0wgEAAAAY/tileburnedin?size=1280x720&partner=hbomaxcom&v=49236e9dd7f8f6adf797e218f91e6a74&host=art-gallery.api.hbo.com&language=es-419&w=1280" class="img-fluid rounded" alt="La noche del demonio poster">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GYiOvQAJnWJHDVgEAAAAU/tileburnedin?size=1280x720&partner=hbomaxcom&v=e778978901a20eb44c08932f8715768e&host=art-gallery.api.hbo.com&language=es-419&w=1280" class="img-fluid rounded" alt="no respires poster">
-              </div>
-            </div>
-            </div>
+          <div class="col img-categorias mb-3 ">
+            <a href="#">
+              <img
+                src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQXBcbFF6jcjkE7SbNuX2uZzSP-qyQN9-WlV4DierFiSMMq5qtxKM0hQ-QSJNLL1D1G_xAchGhnQ8iSRH9XEMTbnEcZCv5_VSFo.webp?r=743"
+                class="img-fluid rounded" alt="poster buenos vecinos 2">
+            </a>
           </div>
 
-          <!-- ============================ROMANCE======================================= -->
 
-          <div class="container text-left">
-            <h2 class="text-success titulo-categoria ">Romance</h2>
-            <div class="row">
-              <div class="col img-categorias ">
-                <img src="https://hbomax-images.warnermediacdn.com/2022-02/life_as_we_know_it_1_0.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=760" class="img-fluid rounded" alt="life as we know it poster">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GX9ucPAOneK3DYQEAAAF_/tileburnedin?size=1280x720&partner=hbomaxcom&v=b3b4df9d5320dccc20389ea78f1ae517&host=art-gallery.api.hbo.com&language=es-419&w=1280" class="img-fluid rounded" alt="nace una estrella poster">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GYIjhpAq4k4eedgEAAAJp/tileburnedin?size=1280x720&partner=hbomaxcom&v=ff28c419d52b6e8a3a14ee5d82e0cbbb&host=art-gallery.api.hbo.com&language=es-419&w=1280" class="img-fluid rounded" alt="after poster">
-              </div>
-              <div class="col img-categorias ">
-                <img src="https://hbomax-images.warnermediacdn.com/images/GXrxVHgQTjcLDbwEAAAAm/tileburnedin?size=1280x720&partner=hbomaxcom&v=1e0c1a139a9513f88e30b111ebeabe75&host=art-gallery.api.hbo.com&language=es-419&w=1280" class="img-fluid rounded" alt="cuando te encuentre poster">
-              </div>
-            </div>
-            </div>
+          <div class="col img-categorias mb-3 ">
+            <a href="#">
+              <img
+                src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTnACpS38WmUTVSVHd00il7Z51Jbec8wmjrT9I3iXqD6nGFxleMGFHNHTqXkZVMCPabBn4xEXqtsoYcBdzWiOXoA5lcnYk4VBz1T3VpBILT3DcbnFPX5zrlzICdziPiIrMYQ.jpg?r=438"
+                class="img-fluid rounded" alt="poster la otra missy">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- ============================accion======================================= -->
+      <div class="container text-left">
+        <a href="html/categoriaAccion.html">
+          <h2 class="text-success titulo-categoria fw-bold mb-2">+ Acción</h2>
+        </a>
+
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+          <div class="col img-categorias mb-3 ">
+            <a href="html/bloodshoot.html">
+              <img
+                src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW-VNalmBX16n30sM_AOfmKk7FZwFWbk_veCpUNKH5EOr3202DZkU6DYfv0_O6kpYtzNstlPUzlAiB2DhKPJ4rJIzoStmGk936I.webp?r=979"
+                class="img-fluid rounded" alt="bloodshot poster">
+            </a>
+          </div>
+          <div class="col img-categorias mb-3 ">
+            <a href="html/venganza.html">
+              <img
+                src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZ9iS3-B68yWwvBbxPVepiGWUIZKyYiofcmovlwgO3T1Mu2RT8YbUpTwVAt1ZZ92gFmXfEMqMtRtTAu1SYEWP-2tPgc32lAQkK8.webp?r=b21"
+                class="img-fluid rounded" alt="Venganza poster">
+            </a>
+          </div>
+          <div class="col img-categorias mb-3 ">
+            <a href="#">
+              <img
+                src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABav1PKXhPSgUezD4vvsL_ZmGQfBoak-AMZzwpw_9C4o1fsRtR1ldbnRiIU-QgZWGTq5a3lunBFdP8l-_RSra4bWEwcDG9zCZ7CU.webp?r=967"
+                class="img-fluid rounded" alt="Los Condenados poster">
+            </a>
+          </div>
+          <div class="col img-categorias mb-3 ">
+            <a href="#">
+              <img
+                src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWQtbdqZFV5PIXt6kS8kjUs0f-zj2jXd1rmtoqv1Vv0TfrSrE9hEOZW5hNSszib9fkF6jwRv7E5nWDz0K4-Ff3demnho-6Ghgpk.webp?r=ba0"
+                class="img-fluid rounded" alt="Francotirador 6 poster">
+            </a>
           </div>
         </div>
+      </div>
+    </div>
 
 
-    </main>
-    <!-- ============================FINAL DEL MAIN======================================= -->
-
-   
-
-
-
-    <!---------------------------------------FOOTER --------------------------------------->
-
-    <footer class="container-fluid class-footer">
-        <div class="class-logo"> <img src="img/logo.png" alt="logo"></div>
-        <div class="class-redes">
-            <img src="img/whatsapp-logo.png" alt="logo de whatsapp">
-            <img src="img/instagram-logo.png" alt="logo de instagram">
-            <img src="img/facebook-logo.png" alt="logo de facebook">
+    <!-- ============================TERROR======================================= -->
+    <div class="container text-left">
+      <h2 class="text-success titulo-categoria fw-bold mb-2">+ Terror</h2>
+      <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+        <div class="col img-categorias mb-3 ">
+          <a href="html/el-rito.html">
+            <img
+              src="https://hbomax-images.warnermediacdn.com/images/GYKa7VgOEd7TCwgEAAAAD/tileburnedin?size=1280x720&partner=hbomaxcom&v=55a7badea83fa0c88498bc760c4e4d73&host=art-gallery.api.hbo.com&language=en-us&w=1280"
+              class="img-fluid rounded" alt="The Rite poster">
+          </a>
         </div>
-        <div class="class-acerca">
-            <a href="acercadenosotros">Acerca de Nosotros</a>
+        <div class="col img-categorias mb-3 ">
+          <a href="html/exorcismo-emily.html">
+            <img
+              src="https://hbomax-images.warnermediacdn.com/images/GYbzJbQqVUbepjgEAAAAi/tileburnedin?size=1280x720&partner=hbomaxcom&v=e62b00ab510db3d35a753002fe46b6b1&host=art-gallery.api.hbo.com&language=es-419&w=1280"
+              class="img-fluid rounded" alt="El exorcismo de Emily rose poster ">
+          </a>
         </div>
-        <div class="class-contactanos">
-            <a href="contactanos">Contactanos</a>
+        <div class="col img-categorias mb-3 ">
+          <a href="#">
+            <img
+              src="https://hbomax-images.warnermediacdn.com/images/GYSU-3gGn1YO0wgEAAAAY/tileburnedin?size=1280x720&partner=hbomaxcom&v=49236e9dd7f8f6adf797e218f91e6a74&host=art-gallery.api.hbo.com&language=es-419&w=1280"
+              class="img-fluid rounded" alt="La noche del demonio poster">
+          </a>
         </div>
-    </footer>
+        <div class="col img-categorias mb-3 ">
+          <a href="#">
+            <img
+              src="https://hbomax-images.warnermediacdn.com/images/GYiOvQAJnWJHDVgEAAAAU/tileburnedin?size=1280x720&partner=hbomaxcom&v=e778978901a20eb44c08932f8715768e&host=art-gallery.api.hbo.com&language=es-419&w=1280"
+              class="img-fluid rounded" alt="no respires poster">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- ============================ROMANCE======================================= -->
+
+    <div class="container text-left mb-4">
+      <h2 class="text-success titulo-categoria fw-bold mb-2">+ Romance</h2>
+      <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+        <div class="col img-categorias mb-3 ">
+          <a href="html/life-as-we-know-it.html">
+            <img
+              src="https://hbomax-images.warnermediacdn.com/2022-02/life_as_we_know_it_1_0.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=760"
+              class="img-fluid rounded" alt="life as we know it poster">
+          </a>
+        </div>
+        <div class="col img-categorias mb-3 ">
+          <a href="html/nace-una-estrella.html">
+            <img
+              src="https://hbomax-images.warnermediacdn.com/images/GX9ucPAOneK3DYQEAAAF_/tileburnedin?size=1280x720&partner=hbomaxcom&v=b3b4df9d5320dccc20389ea78f1ae517&host=art-gallery.api.hbo.com&language=es-419&w=1280"
+              class="img-fluid rounded" alt="nace una estrella poster">
+          </a>
+        </div>
+        <div class="col img-categorias mb-3 ">
+          <a href="html/after.html">
+            <img
+              src="https://hbomax-images.warnermediacdn.com/images/GYIjhpAq4k4eedgEAAAJp/tileburnedin?size=1280x720&partner=hbomaxcom&v=ff28c419d52b6e8a3a14ee5d82e0cbbb&host=art-gallery.api.hbo.com&language=es-419&w=1280"
+              class="img-fluid rounded" alt="after poster">
+          </a>
+        </div>
+        <div class="col img-categorias mb-3 ">
+          <a href="#">
+            <img
+              src="https://hbomax-images.warnermediacdn.com/images/GXrxVHgQTjcLDbwEAAAAm/tileburnedin?size=1280x720&partner=hbomaxcom&v=1e0c1a139a9513f88e30b111ebeabe75&host=art-gallery.api.hbo.com&language=es-419&w=1280"
+              class="img-fluid rounded" alt="cuando te encuentre poster">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+      <div class="container">
+        <a href="html/suscripcion.html"><img src="img/BANNER.png" class="img-fluid col-12 mb-3" alt="imagen banner"></a>
+      </div>
+
+  </main>
+  <!-- ============================FINAL DEL MAIN======================================= -->
 
 
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+
+
+  <!---------------------------------------FOOTER --------------------------------------->
+
+  <footer class="container-fluid class-footer">
+    <div class="class-logo"> <a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+    <div class="class-redes">
+        <a href="html/error.html"><img class="mx-1" src="img/whatsapp-logo.png" alt="logo de whatsapp"></a>
+        <a href="html/error.html"><img class="mx-1" src="img/instagram-logo.png" alt="logo de instagram"></a>
+        <a href="html/error.html"><img class="mx-1" src="img/facebook-logo.png" alt="logo de facebook"></a>
+    </div>
+    <div class="class-acerca">
+        <a href="html/nosotros.html">Acerca de Nosotros</a>
+    </div>
+    <div class="class-contactanos">
+        <a href="html/contacto.html">Contactanos</a>
+    </div>
+</footer>
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,7 +1,26 @@
+/*============================FONT DE LA PAGINA======================================= */       
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*============================MODAL======================================= */
+
+.modal-content {
+    border: 2px solid #1C3C2A;
+}
+
+.modal-footer .btn-primary {
+    background-color: #1C3C2A;
+    border-color: #131315;
+}
+
+
+.modal-footer .btn-primary:active {
+    background-color: #59C788;
+    border-color: #131315;
 }
 
 
@@ -11,53 +30,94 @@
     background-color: #1F1F1F;
 }
 
-.navbar-1 a, .navbar-2 a {
+.navbar-2 a, .registro a {
     color: #D9D9D9;
 }
 
 .navbar-2 {
     background-color: #1F1F1F;
+    font-weight: 450;
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
 }
 
 .navbar-2 .btn {
+    background-color: #1C3C2A;
+    border: 1px solid #D9D9D9;
     color: #D9D9D9;
-    border-color: #D9D9D9;
 } 
 
+.navbar-2 a:hover, .navbar-2 a:focus {
+    color: #59C788;
+}
+
+
 .navbar-2 .btn:hover {
-    background-color: #D9D9D9;
-    color: black;
+    background-color: #3F604D;
+    border: 1px solid #D9D9D9;
+} 
+
+ .navbar-2 .btn:active {
+    background-color: #59C788 !important;
+    border: 1px solid #D9D9D9 !important;
  } 
+
+ .nav .nav-link:hover, .nav .nav-link:focus {
+    color: #59C788;
+ }
+
+ .registro {
+    font-size: 1rem;
+    margin-right: 0 !important;
+ }
 
  
 /*---------------------------------------MAIN ---------------------------------------*/
 body{
-    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 main {
     background-color: #131315;
-    min-height: 80vh;
-    /* ----------El height creo que es mejor sacarlo  despues de rellenar el main */
-   
-    
+    display: flex;
+
+
 }
-.seleccionada img{
-    border: 4px solid transparent;
-    transition-duration: 300ms;}
+.seleccionada img {
+    outline-offset: -4px;
+    border-radius: 8px;
+    outline: 4px transparent solid;
+    transition: all 300ms ease-out;
+}
 
 .seleccionada img:hover {
     transform: scale(1.1);
-    transition-duration: 300ms;
-    position: relative;
-    z-index: 5;
-    border: 4px solid whitesmoke;
-    margin: 0;
+    outline-offset: -4px;
+    outline: 4px solid whitesmoke;
     }
 
-.marginImg {
-
-        margin: 4% 0;
+    .item-categoria{
+        background-color: #D9D9D9;
+        color: #131315;
     }
+
+    .item-categoria:hover{
+        background-color: #3F604D;
+        color: #D9D9D9 !important;
+    }
+
+    .item-categoria:active{
+        background-color: #59C788;
+    }
+
+    .li-activo .page-link{
+        background-color: #3F604D !important;
+        border-color: #D9D9D9;
+    }
+
+
 /*---------------------------------------FOOTER ---------------------------------------*/
 
 footer{

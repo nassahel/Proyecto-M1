@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Rick y Morty | Streamix</title>
+    <!---------------------------------------LINK DE BOOSTRAP--------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!---------------------------------------LINK DE MI CSS--------------------------------------->
+    <link rel="stylesheet" href="../css/detalle-serie.css">
+</head>
+
+<body>
+
+
+   <!-- ============================MODAL======================================= -->
+   <div id="miModal" class="modal fade modal-md" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ingresar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="container d-flex justify-content-center flex-column align-items-center">
+                <div class="mb-3 col-11 centered">
+                    <label for="exampleFormControlInput1" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3 col-11 centered">
+                    <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a href="error.html"><button type="button"  class="btn btn-primary">Ingresar</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+ <!--=====================================NAVBAR===============================-->
+
+ <nav class="navbar navbar-expand-lg navbar-dark navbar-2 sticky-top">
+  <div class="container-fluid">
+    <a href="../index.html"><img src="../img/logo.png" alt="" width="90" class="d-inline-block align-text-top"></a>
+      <a class="navbar-brand" href="../index.html">STREAMIX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoriaComedia.html">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="todas-series.html">Series</a>
+              </li>
+          </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar Peliculas" aria-label="Buscar">
+                  <a href="error.html"><button class="btn" type="button">Buscar</button></a>
+              </form>
+
+              <ul class="navbar-nav me-auto mx-lg-4 mb-2 mb-lg-0 registro">
+                  <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#miModal" href="#">Ingresar</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="suscripcion.html">Registrarse</a>
+                  </li>
+              </ul>
+          </ul>
+      </div>
+
+  </div>
+</nav>
+
+    <!-- ============================MAIN======================================= -->
+    <main class="principal-bloc">
+
+        <article class="info-peli ">
+
+            <img src="https://art-gallery-latam.api.hbo.com/images/GXkRjxwjR68PDwwEAABKJ/tile?v=c48236782b240e86a14e81263a95c03a&size=1920x1080&compression=low&protection=false&language=es-419" alt="caratula de la palicula Bloodshot">
+
+            <div class="texto">
+                <div>
+                    <h2>Rick y Morty</h2>
+
+                    <p class="genero">Comedia de situación</p>
+                    <div class="anio-duracion">
+                        <p class="anio">Año: 2013</p>
+                        <p class="duracion">6 temporadas</p>
+
+                    </div>
+                    <div class="cali-edad">
+                        <div class="calidad">HD</div>
+                        <div class="edades">+16</div>
+
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="btns">
+                        <a href="#"><button type="button" class="btn ver btn-light">VER
+                                AHORA</button></a>
+                        <a href="#"><button type="button"
+                                class="btn trailer btn-dark">Ver Trailer</button></a>
+                        <a href="#"><button type="button"
+                                    class="btn mi-lista btn-dark fs-4">+</button></a>
+                    </div>
+
+
+                    <h3>Sinopsis</h3>
+                    <p class="sinopsis">Después de haber estado desaparecido durante casi 20 años, Rick Sánchez llega de imprevisto a la puerta de la casa de su hija Beth y se va a vivir con ella y su familia utilizando el garaje como su laboratorio personal.</p>
+
+                </div>
+
+
+            </div>
+
+        </article>
+
+        <div class="capitulos container-fluid col-11 mt-3 mb-4 text-left">
+            <h2 class="text-success mb-4 fw-bold">Temporada 1</h2>
+            <div class="reco row row-cols-2 row-cols-md-3 row-cols-lg-6">
+                <div class="col my-3">
+                    <img src="https://hbomax-images.warnermediacdn.com/2022-08/still_2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com"
+                        class="img-fluid rounded" alt="imagen capitulo 1">
+                        <p class="text-center text-light">Capitulo 1 - 22 min</p>
+
+                </div>
+                <div class="col my-3">
+                    <img src="https://hbomax-images.warnermediacdn.com/2022-08/still_1.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com"
+                        class="img-fluid rounded" alt="imagen capitulo 2">
+                        <p class="text-center text-light">Capitulo 2 - 22 min</p>
+                </div>
+                <div class="col my-3 img-pel">
+                    <img src="https://hbomax-images.warnermediacdn.com/images/GXkRkPgoDro7CZgEAABqh/tile?size=320x180&partner=hbomaxcom&v=62e895434757c62a346b60b59dbb0df2&host=art-gallery.api.hbo.com&language=es-es&w=160"
+                        class="img-fluid rounded" alt="imagen capitulo 3">
+                        <p class="text-center text-light">Capitulo 3 - 21 min</p>
+                </div>
+                <div class="col my-3">
+                    <img src="https://hbomax-images.warnermediacdn.com/images/GXl2aIAEq2yLCHAEAAAoZ/tile?size=320x180&partner=hbomaxcom&v=92e9766db86693c7d059c8a6da2b4dfe&host=art-gallery.api.hbo.com&language=es-es&w=160"
+                        class="img-fluid rounded" alt="imagen capitulo 4">
+                        <p class="text-center text-light">Capitulo 4 - 22.5 min</p>
+                </div>
+                <div class="col my-3">
+                    <img src="https://hbomax-images.warnermediacdn.com/images/GXrWmHAGNJ77DwgEAAAS3/tile?size=320x180&partner=hbomaxcom&v=4d7693c92c544a540a1483f6ac025886&host=art-gallery.api.hbo.com&language=es-es&w=160"
+                        class="img-fluid rounded" alt="imagen capitulo 5">
+                        <p class="text-center text-light">Capitulo 5 - 23 min</p>
+                </div>
+                <div class="col my-3">
+                    <img src="https://hbomax-images.warnermediacdn.com/2022-08/still_4.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com"
+                        class="img-fluid rounded" alt="imagen capitulo 6">
+                        <p class="text-center text-light">Capitulo 6 - 21 min</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="recomendadas container-fluid col-11 mt-3 mb-4 text-left">
+            <h2 class="text-success mb-4 fw-bold">Peliculas recomendadas</h2>
+            <div class="reco row row-cols-2 row-cols-md-3 row-cols-lg-6">
+                <div class="col my-3">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/68F8E55B982803274389D2EDA740F2B0799F538EAD453412F2FE7407B901548C/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="img-fluid rounded" alt="poster dos armas letales">
+                </div>
+                <div class="col my-3">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/D9E97EC1B0FFD7254B3A7B870AD1B979AA016B7558B1E550BF49C5235486C7BD/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="img-fluid rounded" alt="poster duro de matar">
+                </div>
+                <div class="col my-3 img-pel">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/2F15C03CB7BBA5E46ACDB34FFEF277CEC461CE55C2B61C164A5A7553BCCD8214/scale?width=800&aspectRatio=1.78&format=jpeg"
+                        class="img-fluid rounded" alt="poster bad ass">
+                </div>
+                <div class="col my-3">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/DA24816BF64FEE9A59415E460A6BFD368D94D827076CF336BD8EA2E8B8497897/scale?width=800&aspectRatio=1.78&format=jpeg"
+                        class="img-fluid rounded" alt="poster comando">
+                </div>
+                <div class="col my-3">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/6080B130EB83C0C5BC9D527CF13B7085F36303FD6A89A8558AEC245786C696EB/scale?width=800&aspectRatio=1.78&format=jpeg"
+                        class="img-fluid rounded" alt="poster duro de matar">
+                </div>
+                <div class="col my-3">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/9037FEB97C52A6CA9FE3FA612F6E80896D646F35F09332DA4A42A28F493AAF92/scale?width=800&aspectRatio=1.78&format=jpeg"
+                        class="img-fluid rounded" alt="poster insurgente">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- ============================FINAL DEL MAIN======================================= -->
+
+
+
+     <!---------------------------------------FOOTER --------------------------------------->
+
+  <footer class="container-fluid class-footer">
+    <div class="class-logo"> <a href="../index.html"><img src="../img/logo.png" alt="logo"></a></div>
+    <div class="class-redes">
+        <a href="error.html"><img class="mx-1" src="../img/whatsapp-logo.png" alt="logo de whatsapp"></a>
+        <a href="error.html"><img class="mx-1" src="../img/instagram-logo.png" alt="logo de instagram"></a>
+        <a href="error.html"><img class="mx-1" src="../img/facebook-logo.png" alt="logo de facebook"></a>
+    </div>
+    <div class="class-acerca">
+        <a href="nosotros.html">Acerca de Nosotros</a>
+    </div>
+    <div class="class-contactanos">
+        <a href="contacto.html">Contactanos</a>
+    </div>
+</footer>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

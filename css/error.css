@@ -1,4 +1,6 @@
 /*============================FONT DE LA PAGINA======================================= */                      
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
@@ -8,10 +10,12 @@
     box-sizing: border-box;
 }
 
-
-body{
-    font-family: 'Roboto' !important;
+body {
+    background-color: #131315;
+    font-family: 'Roboto', sans-serif;
+    /* min-height: 100vh; */
 }
+
 
 /*============================MODAL======================================= */
 
@@ -92,19 +96,40 @@ body{
         margin-right: 1rem;
     }
 }
-
+ 
 /*---------------------------------------MAIN ---------------------------------------*/
-p{
-    margin-bottom:0;
-    text-align: justify;
-}
-h1{
-    text-align: center;
-}
+
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #131315;
-    min-height: 81.5vh;
+    height: 81.8vh;
+    color:  #3e9463;
+    font-family: 'Creepster', cursive;
+
 }
+
+main img {
+    width: 70%;
+}
+
+main h2 {
+    font-size: 10vh;
+
+
+}
+main h3{
+    font-size: 2.5vh;
+    
+}
+ main article {
+    text-align: center;
+ }
+
+
+
 
 /*---------------------------------------FOOTER ---------------------------------------*/
 
@@ -168,3 +193,4 @@ footer{
         margin-top: 0px;
     }
 }
+

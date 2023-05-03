@@ -1,36 +1,97 @@
+/*============================FONT DE LA PAGINA======================================= */       
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #131315;
+
+body{
+    font-family: 'Roboto' !important;
 }
+
+/*============================MODAL======================================= */
+
+.modal-content {
+    border: 2px solid #1C3C2A;
+}
+
+.modal-footer .btn-primary {
+    background-color: #1C3C2A;
+    border-color: #131315;
+}
+
+
+.modal-footer .btn-primary:active {
+    background-color: #59C788;
+    border-color: #131315;
+}
+
+
 /*---------------------------------------NAVBAR ---------------------------------------*/
 
 .navbar-1 {
     background-color: #1F1F1F;
 }
 
-.navbar-1 a, .navbar-2 a {
+.navbar-2 a, .registro a {
     color: #D9D9D9;
 }
 
 .navbar-2 {
     background-color: #1F1F1F;
+    font-weight: 450;
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
 }
 
 .navbar-2 .btn {
+    background-color: #1C3C2A;
+    border: 1px solid #D9D9D9;
     color: #D9D9D9;
-    border-color: #D9D9D9;
-} 
+}
+
+.navbar-2 a:hover, .navbar-2 a:focus {
+    color: #59C788;
+}
+
 
 .navbar-2 .btn:hover {
-    background-color: #D9D9D9;
-    color: black;
- } 
+    background-color: #3F604D;
+    border: 1px solid #D9D9D9;
+}
 
+ .navbar-2 .btn:active {
+    background-color: #59C788 !important;
+    border: 1px solid #D9D9D9 !important;
+ }
+
+ .nav .nav-link:hover, .nav .nav-link:focus {
+    color: #59C788;
+ }
+
+ .registro {
+    font-size: 1rem;
+    margin-right: 0 !important;
+ }
+
+ @media (max-width: 800px) {
+
+    .registro {
+        flex-direction: row;
+        margin-right: 0;
+    }
+
+    .registro li {
+        margin-right: 1rem;
+    }
+}
  
 /*---------------------------------------MAIN ---------------------------------------*/
 
@@ -45,7 +106,7 @@ main {
     display: flex;
     width: 100%;
     position: relative;
-    min-height: 66vh;  
+    min-height: 70vh;
 
     
 }
@@ -54,21 +115,25 @@ main {
 .info-peli img {
    width: 100%;
    position: absolute;
+   height: 100%;object-fit: cover;
+   object-position: 100% 0;
 
 }
 
 .info-peli .texto {
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.54);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* position: absolute; */
     z-index: 5;
-    padding: 2%;
+    padding: 1%;
+    padding-bottom: 1%;
     width: 50%;
-    /* height: 100%; */
+    /* height: 70vh; */
     color: #D9D9D9;
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,2,4,1) 64%, rgba(0,3,5,0.7791491596638656) 78%, rgba(0,6,11,0.38699229691876746) 92%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8463760504201681) 20%, rgba(0,0,0,0.7763480392156863) 40%, rgba(0,0,0,0.7483368347338936) 60%, rgba(0,0,0,0.6979166666666667) 76%, rgba(0,0,0,0.5186449579831933) 89%, rgba(0,0,0,0.32816876750700286) 95%, rgba(0,0,0,0) 100%);
 }
 
 
@@ -79,7 +144,13 @@ p {
 
 .texto h2 {
     font-size: 60px;
+    font-weight: bold;
 }
+
+.texto h3 {
+    font-weight: bold;
+}
+
 
 .genero, .anio-duracion, .cali-edad {
     font-size: 20px;
@@ -87,11 +158,10 @@ p {
 
 .cali-edad {
     display: flex;
-    /* margin-bottom: 7rem; */
 }
 
 .anio-duracion {
-    display: flex;
+    display: flex; 
 }
 
 .anio, .duracion {
@@ -118,6 +188,20 @@ p {
     margin-right: 1%;  
 }
 
+.mi-lista {
+    border: 2px solid #D9D9D9;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    margin-right: 1%; 
+    border-radius: 50%; 
+}
+
+.trailer:hover, .mi-lista:hover {
+    background-color: whitesmoke;
+    color: black;
+} 
+
 .sinopsis {
     text-align: justify;
     font-size: 25px;
@@ -125,24 +209,40 @@ p {
 }
 
 .recomendadas img {
-    
-    border: 4px solid transparent;
-    transition: all 300ms;
-    
-    
+    outline-offset: -4px;
+    border-radius: 8px;
+    outline: 4px transparent solid;
+    transition: all 300ms ease-out;   
 }
+
 
 .recomendadas img:hover {
     transform: scale(1.1);
-    border: 4px solid whitesmoke;
-    /* box-shadow: inset 10px 10px 10px 7px red; */
+    outline-offset: -4px;
+    outline: 4px solid whitesmoke;
     
 }
+
+.capitulos img {
+    outline-offset: -4px;
+    border-radius: 8px;
+    outline: 4px transparent solid;
+    transition: all 300ms ease-out;   
+}
+
+
+.capitulos img:hover {
+    outline-offset: -4px;
+    outline: 4px solid whitesmoke;
+
+    
+}
+
 
 @media (max-width: 1000px) {
     
 .texto h2 {
-        font-size: 6vw;  
+        font-size: 7vw;  
     }
 
     .genero, .anio-duracion, .cali-edad {
@@ -159,7 +259,6 @@ p {
     }
 
     .info-peli {
-        /* min-height: 80vh; */
         height: auto;
         width: 100%;
         min-height: 38vh;
@@ -168,7 +267,6 @@ p {
     .info-peli .texto {
         width: 100%;
         height: auto;
-        /* max-height: 40vh; */
         background: rgb(0,0,0);
         background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,5,0.700717787114846) 43%, rgba(0,6,11,0.41780462184873945) 52%, rgba(0,0,0,0) 100%);
     }
@@ -185,19 +283,16 @@ p {
 /*---------------------------------------FOOTER ---------------------------------------*/
 
 footer{
-    height: 180px;
+    padding: 0.5rem 0;
     background-color: #1F1F1F;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 25%);
 }
 
 .class-redes img{
     max-width: 35px;
-    width: 10%;
     height: 100%;
-    object-fit: cover;
 }
 
 .class-acerca a{
@@ -206,29 +301,15 @@ footer{
     text-decoration: none;
 }
 
-.class-acerca{
-    margin-top: 10px;
-}
-
 .class-contactanos a{
     color: #D9D9D9;
     list-style: none;
     text-decoration: none;
 }
 
-.class-contactanos{
-    margin-top: 10px;
-}
-
 .class-logo img{
      width: 20%;
-     height: 100%;
-     object-fit: cover;
  }
-
-.class-logo{
-    margin-top: 5px;
-}
 
 .class-redes{
     margin: 5px 0;
@@ -242,9 +323,8 @@ footer{
         align-items: center;
     }
 
-    .class-logo img{
-        width: 30%;
-        height: 100%;
+    .class-logo img {
+        width: 23%;
         object-fit: cover;
     }
 
@@ -262,4 +342,3 @@ footer{
         margin-top: 0px;
     }
 }
-

@@ -1,163 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
-    <title>Comedia-2</title>
-    <!---------------------------------------LINK DE BOOSTRAP--------------------------------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!---------------------------------------LINK DE MI CSS--------------------------------------->
-    <link rel="stylesheet" href="/css/categoriaComedia_2.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <title>Comedias Pag 2 | Streamix</title>
+  <!---------------------------------------LINK DE BOOSTRAP--------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!---------------------------------------LINK DE MI CSS--------------------------------------->
+  <link rel="stylesheet" href="../css/categorias.css">
 </head>
 
 <body>
-    <!-- ============================NAVBAR1-REGISTRO======================================= -->
-
-    <ul class="nav justify-content-end navbar-1">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Ingresar</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Registrarse</a>
-        </li>
-    </ul>
-
-    <!--=====================================NAVBAR2-LOGO-Y-BUSQUEDA===============================-->
-
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-2">
-        <div class="container-fluid">
-            <img src="/img/logo.png" alt="" width="60" class="d-inline-block align-text-top">
-            <a class="navbar-brand" href="/index.html">STREAMIX</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mi Lista</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Peliculas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Series</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Peliculas" aria-label="Buscar">
-                    <button class="btn" type="submit">Buscar</button>
-                </form>
-            </div>
+  <!-- ============================MODAL======================================= -->
+  <div id="miModal" class="modal fade modal-md" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Ingresar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </nav>
-
-    <!-- ============================MAIN======================================= -->
-    <main>
-        <!-- ============================grid======================================= -->
-        <section class="container-fluid">
-
-            <div class="seleccionada container text-left">
-              <h2 class="text-success">Comedias</h2>
-              <div class="row">
-                <div class="col-sm-6 col-lg-3 align-items-center">
-                  <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU_d2lWQyWBdw5wxmyefhXagSOSP1_g4_DtuYqOzyvcfTeYXNE2ou-x6flKtblZiENvAmK6GOLQplcOFy5tWh0uleoc2kpFGBd4.webp?r=335" class="img-rounded marginImg" alt="jackass 4.5 poster">
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                  <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUAK114RqpB6Cd3S8zBD-Ovldduf2UqwurZvp94yxngt5PHXCyWm3saEmmh57iwoPVwpX7-i2-wkggPOgFJ-HJD9wWbZ8pOEeqU.webp?r=966" class="img-rounded marginImg" alt="where is the money poster">
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                  <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXITvosa7K-nRjXrUYRBg42m5toPpdWbRSln2B5xiAfzkti4tFCu3s4l-ZenoWi_zmwkzlBwCXygS0XuptjU_j3HkG-UxbhfRRM.webp?r=1b4" class="img-rounded marginImg" alt="30 minutos o menos poster">
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                  <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXnLn3_6L6VgJnHDewlzN9F3dc7GHMoD45NBFuGdxDchAm1nOBe3H66M-HocJsGzwQsnv4yQaMeAp8Ws7mZEVybp8VnSUjKZQk0.webp?r=573" class="img-rounded marginImg" alt="habia una vez en hollywood poster">
-                </div> 
-              </div>
-                
-                <div class="row">
-                  <div class="col-sm-6 col-lg-3 align-items-center">
-                    <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTOT1kn7O3hpvnRzAcmJfFuW4WNWYFrCd82T3mUljg7U-898a5aVQMjp3FFtw8Xk5rk9txA44FVBfe7ywRDtSmINYtHiUnF2Q7Y.webp?r=c63" class="img-rounded marginImg" alt="familia al instante poster">
-                  </div>
-                  <div class="col-sm-6 col-lg-3 align-items-center">
-                    <img src="https://occ-0-4264-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYI8y-B7jTFEqtVP5k_yizrxaa3yDQmJVreNWHyA4tTYBdBzaf4SsE8e8Ldd7ILPKNLvMUHeIZuh2IzW55YVCzKajkOGlEtW3Hxfc6aHeKG4-u9myy3M48up0yYdcXz40sd5.jpg?r=752" class="img-rounded marginImg" alt="los 4 grandes poster">
-                  </div>
-                  <div class="col-sm-6 col-lg-3 align-items-center">
-                    <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRLBwNe7PDidioJceSCgeDq4m3AyVNd5_rA9KWgI3SHOppIODahb17KEx-0TPabGae_LK8BPZ_Iq_ytLf7GvO_SzT6oddtM3qwc.webp?r=1b9" class="img-rounded marginImg" alt="guerra de papás 2 poster">
-                  </div>
-                  <div class="col-sm-6 col-lg-3 align-items-center">
-                    <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaFurGll8OLnyiUtmONbmmL0pnnTE7TQYl0m48iSwHQ7wKjVluVQkED-93VO70iBzVet4odB4bI41tqpy9Gz13E7_pZhHPdHk5s.webp?r=d88" class="img-rounded marginImg" alt="la noche anterior poster">
-                  </div> 
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-6 col-lg-3 align-items-center">
-                    <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbL18FGrg214_biDKhJxsPWST9Lse7HcpqDgSfdwVTFTs-pSIqiQt43Sei8wiVRg5jJqRMkSGzTWtxLqHh1vRumm6TZ0DKsX8lc.webp?r=920" class="img-rounded marginImg" alt="zombies poster">
-                  </div>
-                  <div class="col-sm-6 col-lg-3 align-items-center">
-                    <img src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ9I3K3CUXUVVxhNywXMn5BNowOiBSomwgAfnLg2kFQuUZfTDUyv6GbxdAjvDse2TVCpV8LumxqlAE3C9D7LjBSiRW8acVnBl-Y.webp?r=bff" class="img-rounded marginImg" alt="un principe en nueva york poster">
-                  </div>
-                  <div class="col-sm-6 col-lg-3 align-items-center">
-                    <img src="https://occ-0-4264-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWWnUteTW4ADHGQmQ4D4OfvasJ82LFxu0YFsqp3D0ir0K5cO_aew5NqpVwGrNaW2ljRJXBeY1JdAaDdQVylkymkMRuBK5MXzZ9k.webp?r=4a1" class="img-rounded marginImg" alt="super policias poster">
-                  </div>
-                  <div class="col-sm-6 col-lg-3 align-items-center">
-                    <img src="https://occ-0-4264-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeDOiekgI-MWnZwrbPztc543o9PVh0liLHgV_5lE19Lxbld54evFkNGB9ISVi2B2BRJsXy-KqrbHCKljvNcRdNBPLQmaQgf1TeY.webp?r=5ef" class="img-rounded marginImg" alt="la fiesta de las salchichas poster">
-                  </div> 
-                </div>
-              </div>
-                
-              <!-- ============================accion=====================-================== -->
-               <div class="container-fluid static py-5">
-                <ul class="pagination pagination-sm justify-content-center align-items-center">
-                  <li class="page-item"><a href="categoriaComedia.html" class="page-link">Anterior</a></li>
-                  <li class="page-item"><a href="categoriaComedia.html" class="page-link">1</a></li>
-                  <li class="page-item active"><a href="#" class="page-link">2</a></li>
-                  <li class="page-item disabled"><a href="#" class="page-link">Siguiente</a></li>
-                 </ul>
-               </div>
-              
-                  
-                  
-              
-        </section>
-        
-
-
-    </main>
-    <!-- ============================FINAL DEL MAIN======================================= -->
-
-
-
-    <!---------------------------------------FOOTER --------------------------------------->
-
-    <footer class="container-fluid class-footer">
-        <div class="class-logo"> <img src="/img/logo.png" alt="logo"></div>
-        <div class="class-redes">
-            <img src="/img/whatsapp-logo.png" alt="logo de whatsapp">
-            <img src="/img/instagram-logo.png" alt="logo de instagram">
-            <img src="/img/facebook-logo.png" alt="logo de facebook">
+        <div class="container d-flex justify-content-center flex-column align-items-center">
+          <div class="mb-3 col-11 centered">
+            <label for="exampleFormControlInput1" class="form-label">E-Mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3 col-11 centered">
+            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
         </div>
-        <div class="class-acerca">
-            <a href="acercadenosotros">Acerca de Nosotros</a>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="error.html"><button type="button" class="btn btn-primary">Ingresar</button></a>
         </div>
-        <div class="class-contactanos">
-            <a href="contactanos">Contactanos</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--=====================================NAVBAR===============================-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-2 sticky-top">
+    <div class="container-fluid">
+      <a href="../index.html"><img src="../img/logo.png" alt="" width="90" class="d-inline-block align-text-top"></a>
+      <a class="navbar-brand" href="../index.html">STREAMIX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categoriaComedia.html">Peliculas</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="todas-series.html">Series</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar Peliculas" aria-label="Buscar">
+          <a href="error.html"><button class="btn" type="button">Buscar</button></a>
+        </form>
+
+        <ul class="navbar-nav me-auto mx-lg-4 mb-2 mb-lg-0 registro">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#miModal" href="#">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="error.html">Registrarse</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ============================MAIN======================================= -->
+  <main>
+    <!-- ============================grid======================================= -->
+    <section class="container-fluid col-lg-9">
+
+      <div class="seleccionada text-left pt-5">
+        <h2 class="text-success fw-bold">Comedias</h2>
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU_d2lWQyWBdw5wxmyefhXagSOSP1_g4_DtuYqOzyvcfTeYXNE2ou-x6flKtblZiENvAmK6GOLQplcOFy5tWh0uleoc2kpFGBd4.webp?r=335"
+              class="img-fluid" alt="jackass 4.5 poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUAK114RqpB6Cd3S8zBD-Ovldduf2UqwurZvp94yxngt5PHXCyWm3saEmmh57iwoPVwpX7-i2-wkggPOgFJ-HJD9wWbZ8pOEeqU.webp?r=966"
+              class="img-fluid" alt="where is the money poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXITvosa7K-nRjXrUYRBg42m5toPpdWbRSln2B5xiAfzkti4tFCu3s4l-ZenoWi_zmwkzlBwCXygS0XuptjU_j3HkG-UxbhfRRM.webp?r=1b4"
+              class="img-fluid" alt="30 minutos o menos poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXnLn3_6L6VgJnHDewlzN9F3dc7GHMoD45NBFuGdxDchAm1nOBe3H66M-HocJsGzwQsnv4yQaMeAp8Ws7mZEVybp8VnSUjKZQk0.webp?r=573"
+              class="img-fluid" alt="habia una vez en hollywood poster">
+          </div>
         </div>
-    </footer>
+
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTOT1kn7O3hpvnRzAcmJfFuW4WNWYFrCd82T3mUljg7U-898a5aVQMjp3FFtw8Xk5rk9txA44FVBfe7ywRDtSmINYtHiUnF2Q7Y.webp?r=c63"
+              class="img-fluid" alt="familia al instante poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-4264-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYI8y-B7jTFEqtVP5k_yizrxaa3yDQmJVreNWHyA4tTYBdBzaf4SsE8e8Ldd7ILPKNLvMUHeIZuh2IzW55YVCzKajkOGlEtW3Hxfc6aHeKG4-u9myy3M48up0yYdcXz40sd5.jpg?r=752"
+              class="img-fluid" alt="los 4 grandes poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRLBwNe7PDidioJceSCgeDq4m3AyVNd5_rA9KWgI3SHOppIODahb17KEx-0TPabGae_LK8BPZ_Iq_ytLf7GvO_SzT6oddtM3qwc.webp?r=1b9"
+              class="img-fluid" alt="guerra de papás 2 poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaFurGll8OLnyiUtmONbmmL0pnnTE7TQYl0m48iSwHQ7wKjVluVQkED-93VO70iBzVet4odB4bI41tqpy9Gz13E7_pZhHPdHk5s.webp?r=d88"
+              class="img-fluid" alt="la noche anterior poster">
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbL18FGrg214_biDKhJxsPWST9Lse7HcpqDgSfdwVTFTs-pSIqiQt43Sei8wiVRg5jJqRMkSGzTWtxLqHh1vRumm6TZ0DKsX8lc.webp?r=920"
+              class="img-fluid" alt="zombies poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-1701-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ9I3K3CUXUVVxhNywXMn5BNowOiBSomwgAfnLg2kFQuUZfTDUyv6GbxdAjvDse2TVCpV8LumxqlAE3C9D7LjBSiRW8acVnBl-Y.webp?r=bff"
+              class="img-fluid" alt="un principe en nueva york poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-4264-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWWnUteTW4ADHGQmQ4D4OfvasJ82LFxu0YFsqp3D0ir0K5cO_aew5NqpVwGrNaW2ljRJXBeY1JdAaDdQVylkymkMRuBK5MXzZ9k.webp?r=4a1"
+              class="img-fluid" alt="super policias poster">
+          </div>
+          <div class="col mb-4">
+            <img
+              src="https://occ-0-4264-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeDOiekgI-MWnZwrbPztc543o9PVh0liLHgV_5lE19Lxbld54evFkNGB9ISVi2B2BRJsXy-KqrbHCKljvNcRdNBPLQmaQgf1TeY.webp?r=5ef"
+              class="img-fluid" alt="la fiesta de las salchichas poster">
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================accion=====================-================== -->
+      <div class="container-fluid static py-5">
+        <ul class="pagination pagination-sm justify-content-center align-items-center">
+          <li class="page-item"><a href="categoriaComedia.html" class="page-link item-categoria">Anterior</a></li>
+          <li class="page-item"><a href="categoriaComedia.html" class="page-link item-categoria">1</a></li>
+          <li class="page-item active li-activo"><a href="#" class="page-link item-categoria">2</a></li>
+          <li class="page-item disabled"><a href="#" class="page-link item-categoria">Siguiente</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- ============================FINAL DEL MAIN======================================= -->
 
 
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+  <!---------------------------------------FOOTER --------------------------------------->
+
+  <footer class="container-fluid class-footer">
+    <div class="class-logo"> <a href="../index.html"><img src="../img/logo.png" alt="logo"></a></div>
+    <div class="class-redes">
+      <a href="error.html"><img class="mx-1" src="../img/whatsapp-logo.png" alt="logo de whatsapp"></a>
+      <a href="error.html"><img class="mx-1" src="../img/instagram-logo.png" alt="logo de instagram"></a>
+      <a href="error.html"><img class="mx-1" src="../img/facebook-logo.png" alt="logo de facebook"></a>
+    </div>
+    <div class="class-acerca">
+      <a href="nosotros.html">Acerca de Nosotros</a>
+    </div>
+    <div class="class-contactanos">
+      <a href="contacto.html">Contactanos</a>
+    </div>
+  </footer>
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

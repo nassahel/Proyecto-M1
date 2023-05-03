@@ -1,6 +1,5 @@
-/*============================FONT DE LA PAGINA======================================= */                      
+/*============================FONT DE LA PAGINA======================================= */       
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 
 *{
     margin: 0;
@@ -8,14 +7,15 @@
     box-sizing: border-box;
 }
 
-
-body{
+body {
+    background-color: #131315;
     font-family: 'Roboto' !important;
 }
 
+
 /*============================MODAL======================================= */
 
-.modal-content {
+.modal-content { 
     border: 2px solid #1C3C2A;
 }
 
@@ -55,7 +55,7 @@ body{
     background-color: #1C3C2A;
     border: 1px solid #D9D9D9;
     color: #D9D9D9;
-}
+} 
 
 .navbar-2 a:hover, .navbar-2 a:focus {
     color: #59C788;
@@ -65,12 +65,12 @@ body{
 .navbar-2 .btn:hover {
     background-color: #3F604D;
     border: 1px solid #D9D9D9;
-}
+} 
 
  .navbar-2 .btn:active {
     background-color: #59C788 !important;
     border: 1px solid #D9D9D9 !important;
- }
+ } 
 
  .nav .nav-link:hover, .nav .nav-link:focus {
     color: #59C788;
@@ -80,9 +80,9 @@ body{
     font-size: 1rem;
     margin-right: 0 !important;
  }
-
+ 
  @media (max-width: 800px) {
-
+   
     .registro {
         flex-direction: row;
         margin-right: 0;
@@ -94,16 +94,99 @@ body{
 }
 
 /*---------------------------------------MAIN ---------------------------------------*/
-p{
-    margin-bottom:0;
-    text-align: justify;
+
+
+.banner {
+    height: 10vh;
+    background: rgb(28,60,42);
+background: linear-gradient(90deg, rgba(28,60,42,1) 0%, rgba(63,96,77,1) 100%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
-h1{
-    text-align: center;
+
+.banner h1 {
+    color: #D9D9D9;
+    font-size: 3rem;
+    margin-left: 2%;
 }
-main {
-    background-color: #131315;
-    min-height: 81.5vh;
+
+ main {
+    min-height: 72vh;
+}
+
+main label, #camposRequeridos {
+    color: #D9D9D9;
+}
+
+.txt-rz {
+    resize: none;
+    height: 10rem;
+}
+
+
+
+aside {
+    color: #D9D9D9;
+} 
+
+.img-rds img {
+    width: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.redes a {
+    margin-right: 0.3rem;
+}
+
+aside h2 {
+    color: #59C788 !important;
+}
+
+main .btn {
+    background-color: #1C3C2A;
+    border: 1px solid #D9D9D9;
+}
+
+main .btn:hover {
+    background-color: #3F604D;
+    border: 1px solid #D9D9D9;
+}
+
+
+main .btn:active {
+    background-color: #59C788 !important;
+    border: 1px solid #D9D9D9 !important;
+}
+
+
+@media (max-width: 800px) {
+    .principal {
+        padding-top: 2.5rem;
+    }
+  
+    .img-rds {
+        display: none;
+
+        
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.3rem 0 !important;
+    }
+
+
+    .registro {
+        flex-direction: row;
+        margin-right: 0;
+    }
+
+    .registro li {
+        margin-right: 1rem;
+    }
 }
 
 /*---------------------------------------FOOTER ---------------------------------------*/
@@ -168,3 +251,4 @@ footer{
         margin-top: 0px;
     }
 }
+

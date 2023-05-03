@@ -1,13 +1,11 @@
 /*============================FONT DE LA PAGINA======================================= */                      
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body{
     font-family: 'Roboto' !important;
@@ -93,18 +91,81 @@ body{
     }
 }
 
+ 
 /*---------------------------------------MAIN ---------------------------------------*/
-p{
-    margin-bottom:0;
-    text-align: justify;
-}
-h1{
-    text-align: center;
-}
+
 main {
+    width: 100%;
+    color: #D9D9D9;
+    padding-bottom: 2%;
     background-color: #131315;
-    min-height: 81.5vh;
+    min-height: 100vh;
 }
+
+
+.precios-suscripcion{
+    margin: 5%;
+    padding: 2%;
+    border: 2px solid #D9D9D9 ;
+    border-radius: 5px;
+    height: 290px;
+    width: 80%;
+    background-color: #1F1F1F;
+}
+
+
+.precios-suscripcion li{
+    list-style: none;
+    margin-bottom: 0.5%;
+}
+
+.contreseña-color{
+    color: #D9D9D9;
+}
+
+.boton-enviar{
+    background-color: #1C3C2A;
+    border: 1px solid #D9D9D9 !important;
+    color: #D9D9D9;
+    width: 7rem;
+    font-weight: bold;
+}
+
+.boton-enviar:active{
+    background-color: #59C788 !important;
+    border: 1px solid #D9D9D9 !important;
+    color:black !important;
+}
+
+
+.boton-enviar:hover{
+    background-color: #3F604D ;
+    color: #D9D9D9;
+}
+
+@media screen and (min-width:776px){
+    .precios-suscripcion{
+        height: 350px;
+        width: 50%;
+        margin: 0% 3%;
+    }
+    .input-suscribirse{
+        width: 300px !important;
+    }
+}
+
+@media screen and (min-width:992px){
+    .precios-suscripcion{
+        width: 60%;
+    }
+    .input-suscribirse{
+        width: 350px !important;
+    }
+    .div__h2{
+        margin-top: 30px;
+    }
+}
+
 
 /*---------------------------------------FOOTER ---------------------------------------*/
 

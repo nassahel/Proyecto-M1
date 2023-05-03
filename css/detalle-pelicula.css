@@ -1,4 +1,6 @@
+/*============================FONT DE LA PAGINA======================================= */       
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 *{
     margin: 0;
@@ -7,16 +9,13 @@
 }
 
 
-body {
-    background-color: #131315;
-    font-family: 'Roboto', sans-serif;
-    /* min-height: 100vh; */
+body{
+    font-family: 'Roboto' !important;
 }
-
 
 /*============================MODAL======================================= */
 
-.modal-content { 
+.modal-content {
     border: 2px solid #1C3C2A;
 }
 
@@ -56,7 +55,7 @@ body {
     background-color: #1C3C2A;
     border: 1px solid #D9D9D9;
     color: #D9D9D9;
-} 
+}
 
 .navbar-2 a:hover, .navbar-2 a:focus {
     color: #59C788;
@@ -66,12 +65,12 @@ body {
 .navbar-2 .btn:hover {
     background-color: #3F604D;
     border: 1px solid #D9D9D9;
-} 
+}
 
  .navbar-2 .btn:active {
     background-color: #59C788 !important;
     border: 1px solid #D9D9D9 !important;
- } 
+ }
 
  .nav .nav-link:hover, .nav .nav-link:focus {
     color: #59C788;
@@ -81,9 +80,9 @@ body {
     font-size: 1rem;
     margin-right: 0 !important;
  }
- 
+
  @media (max-width: 800px) {
-   
+
     .registro {
         flex-direction: row;
         margin-right: 0;
@@ -94,86 +93,179 @@ body {
     }
 }
  
- 
 /*---------------------------------------MAIN ---------------------------------------*/
 
 main {
-    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
     background-color: #131315;
+    width: 100%;    
 }
 
-.principal {
-    padding: 0;
-}
-
-
-
-/*---------------------------------------CARRUSEL---------------------------------------*/
-
-
-
-.carousel-item img{
+  .info-peli {
+    display: flex;
     width: 100%;
-    object-fit: cover;
-    object-position: 100% 0;
-    border-radius: 10px;
-    outline: 5px transparent solid;
-    outline-offset: -5px;
-    transition: 300ms ease-out;
-    
+    position: relative;
+    /* min-height: 66vh;   */
+    min-height: 70vh;
+
     
 }
 
-.carousel-item img:hover {
-    outline: 5px whitesmoke solid;
-    outline-offset: -5px;
+
+.info-peli img {
+   width: 100%;
+   position: absolute;
+   height: 100%;object-fit: cover;
+   object-position: 100% 0;
+
 }
 
-.carousel-inner {
-    border-radius: 10px;
+.info-peli .texto {
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.54);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: absolute; */
+    z-index: 5;
+    padding: 1%;
+    padding-bottom: 1%;
+    width: 50%;
+    /* height: 70vh; */
+    color: #D9D9D9;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8463760504201681) 20%, rgba(0,0,0,0.7763480392156863) 40%, rgba(0,0,0,0.7483368347338936) 60%, rgba(0,0,0,0.6979166666666667) 76%, rgba(0,0,0,0.5186449579831933) 89%, rgba(0,0,0,0.32816876750700286) 95%, rgba(0,0,0,0) 100%);
 }
 
 
-@media screen and (min-width:768px){
-    .carousel-item img{
-        max-height: 500px;
-    }
-}
 
-
-/*---------------------------------------CATEGORIAS---------------------------------------*/
-
-
-.titulo-categoria{
-    margin-top: 2%;
+p {
     margin-bottom: 0;
-    cursor: pointer;
-    transition: 300ms ease-out;  
 }
 
-.titulo-categoria:hover {
-    color:#D9D9D9 !important;
+.texto h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.texto h3 {
+    font-weight: bold;
+}
+
+
+.genero, .anio-duracion, .cali-edad {
+    font-size: 20px;
+}
+
+.cali-edad {
+    display: flex;
+}
+
+.anio-duracion {
+    display: flex; 
+}
+
+.anio, .duracion {
+    margin-right: 1%;
+}
+
+.calidad, .edades {
+    text-align: center;
+    border: 1px solid #D9D9D9;
+    margin: 3px;
+    padding: 3px;
+    font-weight: bold;
     
 }
 
-.img-categorias img {
+.btns {
+    margin-bottom: 2%;
+}
+.ver, .trailer {
+    border: 2px solid #D9D9D9;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    margin-right: 1%;  
+}
+
+.mi-lista {
+    border: 2px solid #D9D9D9;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    margin-right: 1%; 
+    border-radius: 50%; 
+}
+
+.trailer:hover, .mi-lista:hover {
+    background-color: whitesmoke;
+    color: black;
+} 
+
+.sinopsis {
+    text-align: justify;
+    font-size: 25px;
+    max-width: 100%;
+}
+
+.recomendadas img {
     outline-offset: -4px;
     border-radius: 8px;
     outline: 4px transparent solid;
-    transition: all 300ms ease-out;
-    
+    transition: all 300ms ease-out;   
 }
 
-.img-categorias img:hover {
+
+.recomendadas img:hover {
     transform: scale(1.1);
     outline-offset: -4px;
     outline: 4px solid whitesmoke;
+
+    
 }
 
-a {
-text-decoration:none;
+
+@media (max-width: 1000px) {
+    
+.texto h2 {
+        font-size: 7vw;  
+    }
+
+    .genero, .anio-duracion, .cali-edad {
+        font-size: 2.7vw;
+    }
+
+    .sinopsis {
+        font-size: 3.5vw;
+        width: 100%;
+    }
+
+    .cali-edad {
+        margin-bottom: 4vh;
+    }
+
+    .info-peli {
+        height: auto;
+        width: 100%;
+        min-height: 38vh;
+    }
+
+    .info-peli .texto {
+        width: 100%;
+        height: auto;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,5,0.700717787114846) 43%, rgba(0,6,11,0.41780462184873945) 52%, rgba(0,0,0,0) 100%);
+    }
+
+    .btns {
+        margin-bottom: 2%;
+    }
+
 
 }
+
+
 
 /*---------------------------------------FOOTER ---------------------------------------*/
 
