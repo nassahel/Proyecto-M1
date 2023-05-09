@@ -1,9 +1,20 @@
 /*============================FONT DE LA PAGINA======================================= */       
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #131315;
 }
 
 /*============================MODAL======================================= */
@@ -76,11 +87,9 @@
 
  
 /*---------------------------------------MAIN ---------------------------------------*/
-body{
-    font-family: 'Roboto', sans-serif;
-}
+
 main {
-    background-color: #131315;
+    
     display: flex;
 
 
@@ -121,6 +130,7 @@ main {
 /*---------------------------------------FOOTER ---------------------------------------*/
 
 footer{
+    margin-top: auto;
     height: 180px;
     background-color: #1F1F1F;
     text-align: center;
